@@ -220,7 +220,7 @@ HAL_RATE_TABLE ar5416_11ng_table = {
 	{
 		/*                                                 short            ctrl  */
 		/*                valid                rateCode Preamble  dot11Rate Rate */
-		/*[15]  26 Mb */ {  AH_TRUE, HT,  	 26000,    0x83,    0x00,         3,   8 },
+		/*[3]  11 Mb */ {  AH_TRUE, CCK,  	 11000,    0x18,    0x04,(0x80|22),   3 },
 		/*[ 1]   2 Mb */ {  AH_TRUE, CCK,     2000,    0x1a,    0x04, (0x80| 4),   1 },
 		/*[ 2] 5.5 Mb */ {  AH_TRUE, CCK,     5500,    0x19,    0x04, (0x80|11),   2 },
 		/*[ 3]  11 Mb */ {  AH_TRUE, CCK,    11000,    0x18,    0x04, (0x80|22),   3 },
