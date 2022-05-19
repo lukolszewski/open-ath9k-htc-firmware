@@ -211,6 +211,7 @@ ar5416GetRateTable(struct ath_hal *ah, a_uint32_t mode)
 #define	TURBO	IEEE80211_T_TURBO
 #define	XR	ATHEROS_T_XR
 #define HT      IEEE80211_T_HT
+	//	/*[ 0]   1 Mb */ {  AH_TRUE, CCK,     1000,    0x1b,    0x00, (0x80| 2),   0 },
 
 HAL_RATE_TABLE ar5416_11ng_table = {
 
@@ -219,7 +220,7 @@ HAL_RATE_TABLE ar5416_11ng_table = {
 	{
 		/*                                                 short            ctrl  */
 		/*                valid                rateCode Preamble  dot11Rate Rate */
-		/*[ 0]   1 Mb */ {  AH_TRUE, CCK,     1000,    0x1b,    0x00, (0x80| 2),   0 },
+		/*[15]  26 Mb */ {  AH_TRUE, HT,  	 26000,    0x83,    0x00,         3,   8 },
 		/*[ 1]   2 Mb */ {  AH_TRUE, CCK,     2000,    0x1a,    0x04, (0x80| 4),   1 },
 		/*[ 2] 5.5 Mb */ {  AH_TRUE, CCK,     5500,    0x19,    0x04, (0x80|11),   2 },
 		/*[ 3]  11 Mb */ {  AH_TRUE, CCK,    11000,    0x18,    0x04, (0x80|22),   3 },
